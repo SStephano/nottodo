@@ -1,0 +1,24 @@
+body {
+	font-family: verdana;
+	width: 500px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.no {
+	text-decoration: line-through;
+	color: red;
+	border: 1px solid red;
+}
+
+.quote {
+	font-style: italic;
+	color: blue;
+}
+
+.bodycontent {
+	color: green;
+}
