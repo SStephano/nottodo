@@ -1,10 +1,18 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
-	$('#add-button').click(function() {
-		$('ul').append('<li class="todo"><button class="item">No</button>' + $('input#add-todo').val() + '</li>');
-		$('input#add-todo').val("");
+	$("form").submit(function(e){
+		e.preventDefault();
+		var input = $("input").val();
 
+	$("#list-item").append("<ul>" +"<li>"+input+" </li>" 
+		+ "<li class='no'><button> No</button></li>"    + "</ul>")
+	});
 
-	};
 
 });
+	$(document).on("click",".no",function(event){
+		event.preventDefault();
+		$(this).parent().remove()
+});
+
+

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 	<script type="text/javascript" src="app.js"></script>
 	<title>Not To-Do Today List </title>
 </head>
@@ -14,18 +14,18 @@
 	<div id="tagline">
 		<p>Use this list to gain points by not doing "X" for today. 
 		</p>
-		<p class="quote"> Start by entering the items that are slowly your progress towards success. </p>
+		<p class="quote"> Start by entering the items that are slowly your progress towards success. Enter what you shouldn't do today. </p>
 	</div>
-	<div id="list-input">
+	<form>
 		<input type="text" id="add-todo">
 		<button id="add-button"> Add Item </button>
-
-	</div>
+	</form>
+		<div id="error">Enter what you shouldn't do today</div>
 
 	<div id="list-item">
 		<ul>
-			<li class="no">Eat Sugar</li>
-			<li class="todo"><button class="item">Not</button> Watch TV </li>
+			<li class="sugar">Eat Sugar</li>
+			<li class="todo"><button class="item">No</button> Watch TV </li>
 		</ul>
 
 	</div>

@@ -8,7 +8,7 @@ ul {
 	list-style: none;
 }
 
-.no {
+.sugar {
 	text-decoration: line-through;
 	color: red;
 	border: 1px solid red;
@@ -21,4 +21,8 @@ ul {
 
 .bodycontent {
 	color: green;
+}
+
+#list-item {
+	display: inline-block;
 }
